@@ -156,7 +156,7 @@ def player_hash
   game_hash.each do |team, team_stats|
     binding.pry
   end
->>>>>>> fdf8f8034da850e241b20e0ce71c17e0a04f4aa1
+#>>>>>>> fdf8f8034da850e241b20e0ce71c17e0a04f4aa1
 end
 
 
