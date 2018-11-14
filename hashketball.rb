@@ -118,6 +118,7 @@ def game_hash
   }
 end
 
+<<<<<<< HEAD
 #def num_points_scored(player)
 #  game_hash.each do |team, team_stats|
 #   team_stats[:players].each do |name, stats|
@@ -138,6 +139,24 @@ end
 
 def num_points_scored(player)
   player_hash[player][:points]
+=======
+def num_points_scored(player)
+  game_hash.each do |team, team_stats|
+   team_stats[:players].each do |name, stats|
+     if player == name
+       return stats[:points]
+       binding.pry
+     end
+   end
+  end
+end
+
+#extracting just the players from the hash
+def player_hash
+  game_hash.each do |team, team_stats|
+    binding.pry
+  end
+>>>>>>> fdf8f8034da850e241b20e0ce71c17e0a04f4aa1
 end
 
 
